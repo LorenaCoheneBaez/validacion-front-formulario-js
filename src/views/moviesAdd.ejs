@@ -19,7 +19,8 @@
             <ul id="errores"></ul>
             <form id="formularioAgregar" action="/movies/create" method="POST" novalidate>
                 <label for="titulo">Titulo </label>
-                <p><input type="text" name="title" id="titulo" required></p>
+                <!-- autofocus: al cargar la pág hace focus en el input -->
+                <p><input type="text" name="title" id="titulo" required autofocus></p>
                 <label for="rating">Calificación </label>
                 <p><input type="number" name="rating" id="rating" required> </p>
                 <label for="awards">Premios </label>

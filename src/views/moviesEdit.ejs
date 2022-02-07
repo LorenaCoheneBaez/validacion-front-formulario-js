@@ -16,7 +16,7 @@
 <ul id="errores"></ul>
             <form action="/movies/update/<%= Movie.id %>?_method=PUT" method="POST" id="formularioAgregar" novalidate>
                 <label for="title">Título </label>
-                <p><input type="text" name="title" id="titulo" value="<%= Movie.title %>" required></p>
+                <p><input type="text" name="title" id="titulo" value="<%= Movie.title %>" required autofocus></p>
                 <label for="rating">Calificación </label>
                 <p><input type="number" name="rating" id="rating" value="<%= Movie.rating %>" required></p>
                 <label for="awards">Premios </label>
